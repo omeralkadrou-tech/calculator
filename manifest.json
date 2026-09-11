@@ -1,0 +1,11 @@
+{
+    "name": "حاسباتي - مجموعة الحاسبات",
+    "short_name": "حاسباتي",
+    "description": "مجموعة مجانية من الحاسبات أونلاين",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f4f7fb",
+    "theme_color": "#2563eb",
+    "lang": "ar",
+    "dir": "rtl"
+}

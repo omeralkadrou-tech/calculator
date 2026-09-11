@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>حاسباتي - مجموعة حاسبات مجانية أونلاين</title>
+
+    <meta name="description"
+          content="مجموعة مجانية من الحاسبات أونلاين تشمل الحاسبة العادية والعلمية وحاسبة النسبة المئوية والخصم والقروض.">
+
+    <meta name="keywords"
+          content="حاسبة, آلة حاسبة, حاسبة علمية, حاسبة النسبة المئوية, حاسبة الخصم, حاسبة القروض">
+
+    <meta name="robots"
+          content="index, follow">
+
+    <!-- غيّر هذا الرابط إلى رابط موقعك بعد نشره -->
+    <link rel="canonical"
+          href="https://example.com/">
+
+    <meta name="theme-color"
+          content="#2563eb">
+
+    <link rel="manifest"
+          href="manifest.json">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🧮 حاسباتي
+    </div>
+
+    <button id="themeButton"
+            class="theme-button"
+            onclick="toggleTheme()">
+        🌙 الوضع الداكن
+    </button>
+
+</header>
+
+
+<nav class="navigation">
+
+    <button onclick="showCalculator('basic')">
+        🧮 عادية
+    </button>
+
+    <button onclick="showCalculator('scientific')">
+        🔬 علمية
+    </button>
+
+    <button onclick="showCalculator('percentage')">
+        📊 نسبة مئوية
+    </button>
+
+    <button onclick="showCalculator('discount')">
+        🏷️ خصم
+    </button>
+
+    <button onclick="showCalculator('loan')">
+        💰 قروض
+    </button>
+
+</nav>
+
+
+<main class="container">
+
+    <!-- إعلان أعلى الصفحة -->
+
+    <div class="ad-container">
+
+        <span>مساحة إعلانية</span>
+
+        <!-- ضع كود Google AdSense هنا -->
+
+    </div>
+
+
+    <section class="intro">
+
+        <h1>مجموعة الحاسبات المجانية</h1>
+
+        <p>
+            استخدم مجموعة متنوعة من الحاسبات المجانية
+            مباشرة من هاتفك أو جهاز الكمبيوتر.
+        </p>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- الحاسبة العادية -->
+    <!-- ========================= -->
+
+    <section id="basic"
+             class="calculator-section active">
+
+        <h2>🧮 الحاسبة العادية</h2>
+
+        <div class="calculator">
+
+            <div class="display">
+                <div id="basicPrevious"></div>
+                <div id="basicCurrent">0</div>
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="basicClear()">C</button>
+                <button onclick="basicDelete()">⌫</button>
+                <button onclick="basicOperator('%')">%</button>
+                <button class="operator"
+                        onclick="basicOperator('÷')">÷</button>
+
+                <button onclick="basicNumber('7')">7</button>
+                <button onclick="basicNumber('8')">8</button>
+                <button onclick="basicNumber('9')">9</button>
+                <button class="operator"
+                        onclick="basicOperator('×')">×</button>
+
+                <button onclick="basicNumber('4')">4</button>
+                <button onclick="basicNumber('5')">5</button>
+                <button onclick="basicNumber('6')">6</button>
+                <button class="operator"
+                        onclick="basicOperator('-')">−</button>
+
+                <button onclick="basicNumber('1')">1</button>
+                <button onclick="basicNumber('2')">2</button>
+                <button onclick="basicNumber('3')">3</button>
+                <button class="operator"
+                        onclick="basicOperator('+')">+</button>
+
+                <button class="zero"
+                        onclick="basicNumber('0')">0</button>
+
+                <button onclick="basicDecimal()">.</button>
+
+                <button class="equals"
+                        onclick="basicCalculate()">=</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- الحاسبة العلمية -->
+    <!-- ========================= -->
+
+    <section id="scientific"
+             class="calculator-section">
+
+        <h2>🔬 الحاسبة العلمية</h2>
+
+        <div class="scientific-calculator">
+
+            <input id="scientificDisplay"
+                   class="scientific-display"
+                   value="0"
+                   readonly>
+
+            <div class="scientific-buttons">
+
+                <button onclick="scientificClear()">C</button>
+                <button onclick="scientificDelete()">⌫</button>
+
+                <button onclick="scientificFunction('sqrt')">
+                    √
+                </button>
+
+                <button onclick="scientificFunction('square')">
+                    x²
+                </button>
+
+                <button onclick="scientificNumber('7')">7</button>
+                <button onclick="scientificNumber('8')">8</button>
+                <button onclick="scientificNumber('9')">9</button>
+                <button onclick="scientificOperator('/')">÷</button>
+
+                <button onclick="scientificNumber('4')">4</button>
+                <button onclick="scientificNumber('5')">5</button>
+                <button onclick="scientificNumber('6')">6</button>
+                <button onclick="scientificOperator('*')">×</button>
+
+                <button onclick="scientificNumber('1')">1</button>
+                <button onclick="scientificNumber('2')">2</button>
+                <button onclick="scientificNumber('3')">3</button>
+                <button onclick="scientificOperator('-')">−</button>
+
+                <button onclick="scientificNumber('0')">0</button>
+                <button onclick="scientificDecimal()">.</button>
+                <button onclick="scientificOperator('+')">+</button>
+                <button class="equals"
+                        onclick="scientificCalculate()">=</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- حاسبة النسبة -->
+    <!-- ========================= -->
+
+    <section id="percentage"
+             class="calculator-section">
+
+        <h2>📊 حاسبة النسبة المئوية</h2>
+
+        <div class="form-calculator">
+
+            <label>
+                كم تساوي النسبة من الرقم؟
+            </label>
+
+            <input id="percentageValue"
+                   type="number"
+                   placeholder="الرقم">
+
+            <input id="percentageNumber"
+                   type="number"
+                   placeholder="النسبة %">
+
+            <button onclick="calculatePercentage()">
+                احسب
+            </button>
+
+            <div id="percentageResult"
+                 class="result">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- حاسبة الخصم -->
+    <!-- ========================= -->
+
+    <section id="discount"
+             class="calculator-section">
+
+        <h2>🏷️ حاسبة الخصم</h2>
+
+        <div class="form-calculator">
+
+            <label>
+                السعر الأصلي
+            </label>
+
+            <input id="originalPrice"
+                   type="number"
+                   placeholder="مثال: 100">
+
+            <label>
+                نسبة الخصم %
+            </label>
+
+            <input id="discountPercent"
+                   type="number"
+                   placeholder="مثال: 20">
+
+            <button onclick="calculateDiscount()">
+                احسب الخصم
+            </button>
+
+            <div id="discountResult"
+                 class="result">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- حاسبة القروض -->
+    <!-- ========================= -->
+
+    <section id="loan"
+             class="calculator-section">
+
+        <h2>💰 حاسبة القسط الشهري</h2>
+
+        <div class="form-calculator">
+
+            <label>
+                مبلغ القرض
+            </label>
+
+            <input id="loanAmount"
+                   type="number"
+                   placeholder="مثال: 10000">
+
+            <label>
+                نسبة الفائدة السنوية %
+            </label>
+
+            <input id="loanInterest"
+                   type="number"
+                   placeholder="مثال: 5">
+
+            <label>
+                مدة القرض بالسنوات
+            </label>
+
+            <input id="loanYears"
+                   type="number"
+                   placeholder="مثال: 5">
+
+            <button onclick="calculateLoan()">
+                احسب القسط
+            </button>
+
+            <div id="loanResult"
+                 class="result">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- إعلان أسفل الحاسبات -->
+
+    <div class="ad-container">
+
+        <span>مساحة إعلانية</span>
+
+        <!-- ضع كود Google AdSense هنا -->
+
+    </div>
+
+
+    <!-- قسم SEO -->
+
+    <section class="seo-content">
+
+        <h2>حاسبات مجانية أونلاين</h2>
+
+        <p>
+            موقع حاسباتي يوفر مجموعة من الأدوات والحاسبات
+            المجانية التي يمكن استخدامها بسهولة من الهاتف
+            والكمبيوتر دون الحاجة إلى تثبيت برنامج.
+        </p>
+
+        <h3>ما هي الحاسبات الموجودة؟</h3>
+
+        <p>
+            يمكنك استخدام الحاسبة العادية، الحاسبة العلمية،
+            حاسبة النسبة المئوية، حاسبة الخصم وحاسبة القروض.
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 حاسباتي - جميع الحقوق محفوظة
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+<div class="ad-container">
+
+    <span>مساحة إعلانية</span>
+
+    <!-- ضع كود Google AdSense هنا -->
+
+</div>
