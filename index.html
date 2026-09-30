@@ -8,33 +8,93 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>حاسباتي - مجموعة حاسبات مجانية أونلاين</title>
+    <!-- عنوان الصفحة -->
+    <title>حاسباتي | حاسبة عادية وعلمية ونسبة مئوية وخصم وقروض</title>
 
+    <!-- وصف الصفحة لمحركات البحث -->
     <meta name="description"
-          content="مجموعة مجانية من الحاسبات أونلاين تشمل الحاسبة العادية والعلمية وحاسبة النسبة المئوية والخصم والقروض.">
+          content="حاسباتي موقع مجاني يوفر حاسبة عادية وحاسبة علمية وحاسبة النسبة المئوية وحاسبة الخصم وحاسبة القروض أونلاين بسهولة من الهاتف والكمبيوتر.">
 
+    <!-- كلمات مفتاحية -->
     <meta name="keywords"
-          content="حاسبة, آلة حاسبة, حاسبة علمية, حاسبة النسبة المئوية, حاسبة الخصم, حاسبة القروض">
+          content="حاسبة, آلة حاسبة, حاسبة أونلاين, حاسبة علمية, حاسبة النسبة المئوية, حاسبة الخصم, حاسبة القروض, حساب النسبة, حساب الخصم, حساب القسط">
 
     <meta name="robots"
           content="index, follow">
 
-    <!-- غيّر هذا الرابط إلى رابط موقعك بعد نشره -->
-    <link rel="canonical" 
+    <meta name="author"
+          content="حاسباتي">
+
+    <!-- الرابط الأساسي -->
+    <link rel="canonical"
           href="https://omeralkadrou-tech.github.io/calculator/">
 
+    <!-- لون المتصفح -->
     <meta name="theme-color"
           content="#2563eb">
 
+    <!-- Google Search Console -->
+    <meta name="google-site-verification"
+          content="bKobNyOMEApZ8aVQDyxQ32qRhOHtnuNL4fZjNbAwZww">
+
+    <!-- Open Graph -->
+    <meta property="og:title"
+          content="حاسباتي | حاسبات مجانية أونلاين">
+
+    <meta property="og:description"
+          content="استخدم الحاسبة العادية والعلمية وحاسبة النسبة المئوية والخصم والقروض مجانًا أونلاين.">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:url"
+          content="https://omeralkadrou-tech.github.io/calculator/">
+
+    <meta property="og:locale"
+          content="ar_AR">
+
+    <!-- Manifest -->
     <link rel="manifest"
           href="manifest.json">
 
+    <!-- CSS -->
     <link rel="stylesheet"
           href="style.css">
 
-    <meta name="google-site-verification" content="bKobNyOMEApZ8aVQDyxQ32qRhOHtnuNL4fZjNbAwZww" />
+
+    <!-- ========================= -->
+    <!-- Structured Data - WebSite -->
+    <!-- ========================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "حاسباتي",
+        "url": "https://omeralkadrou-tech.github.io/calculator/",
+        "description": "موقع مجاني يوفر مجموعة من الحاسبات أونلاين.",
+        "inLanguage": "ar"
+    }
+    </script>
+
+
+    <!-- ========================= -->
+    <!-- Structured Data - WebPage -->
+    <!-- ========================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "حاسباتي - حاسبات مجانية أونلاين",
+        "url": "https://omeralkadrou-tech.github.io/calculator/",
+        "description": "مجموعة مجانية من الحاسبات أونلاين تشمل الحاسبة العادية والعلمية وحاسبة النسبة المئوية والخصم والقروض.",
+        "inLanguage": "ar"
+    }
+    </script>
 
 </head>
+
 
 <body>
 
@@ -53,7 +113,8 @@
 </header>
 
 
-<nav class="navigation">
+<nav class="navigation"
+     aria-label="أقسام الحاسبات">
 
     <button onclick="showCalculator('basic')">
         🧮 عادية
@@ -91,13 +152,16 @@
     </div>
 
 
+    <!-- مقدمة الموقع -->
+
     <section class="intro">
 
-        <h1>مجموعة الحاسبات المجانية</h1>
+        <h1>حاسبات مجانية أونلاين</h1>
 
         <p>
             استخدم مجموعة متنوعة من الحاسبات المجانية
-            مباشرة من هاتفك أو جهاز الكمبيوتر.
+            مباشرة من هاتفك أو جهاز الكمبيوتر دون الحاجة
+            إلى تثبيت أي برنامج.
         </p>
 
     </section>
@@ -124,34 +188,50 @@
                 <button onclick="basicClear()">C</button>
                 <button onclick="basicDelete()">⌫</button>
                 <button onclick="basicOperator('%')">%</button>
+
                 <button class="operator"
-                        onclick="basicOperator('÷')">÷</button>
+                        onclick="basicOperator('÷')">
+                    ÷
+                </button>
 
                 <button onclick="basicNumber('7')">7</button>
                 <button onclick="basicNumber('8')">8</button>
                 <button onclick="basicNumber('9')">9</button>
+
                 <button class="operator"
-                        onclick="basicOperator('×')">×</button>
+                        onclick="basicOperator('×')">
+                    ×
+                </button>
 
                 <button onclick="basicNumber('4')">4</button>
                 <button onclick="basicNumber('5')">5</button>
                 <button onclick="basicNumber('6')">6</button>
+
                 <button class="operator"
-                        onclick="basicOperator('-')">−</button>
+                        onclick="basicOperator('-')">
+                    −
+                </button>
 
                 <button onclick="basicNumber('1')">1</button>
                 <button onclick="basicNumber('2')">2</button>
                 <button onclick="basicNumber('3')">3</button>
+
                 <button class="operator"
-                        onclick="basicOperator('+')">+</button>
+                        onclick="basicOperator('+')">
+                    +
+                </button>
 
                 <button class="zero"
-                        onclick="basicNumber('0')">0</button>
+                        onclick="basicNumber('0')">
+                    0
+                </button>
 
                 <button onclick="basicDecimal()">.</button>
 
                 <button class="equals"
-                        onclick="basicCalculate()">=</button>
+                        onclick="basicCalculate()">
+                    =
+                </button>
 
             </div>
 
@@ -174,11 +254,13 @@
             <input id="scientificDisplay"
                    class="scientific-display"
                    value="0"
-                   readonly>
+                   readonly
+                   aria-label="شاشة الحاسبة العلمية">
 
             <div class="scientific-buttons">
 
                 <button onclick="scientificClear()">C</button>
+
                 <button onclick="scientificDelete()">⌫</button>
 
                 <button onclick="scientificFunction('sqrt')">
@@ -192,23 +274,39 @@
                 <button onclick="scientificNumber('7')">7</button>
                 <button onclick="scientificNumber('8')">8</button>
                 <button onclick="scientificNumber('9')">9</button>
-                <button onclick="scientificOperator('/')">÷</button>
+
+                <button onclick="scientificOperator('/')">
+                    ÷
+                </button>
 
                 <button onclick="scientificNumber('4')">4</button>
                 <button onclick="scientificNumber('5')">5</button>
                 <button onclick="scientificNumber('6')">6</button>
-                <button onclick="scientificOperator('*')">×</button>
+
+                <button onclick="scientificOperator('*')">
+                    ×
+                </button>
 
                 <button onclick="scientificNumber('1')">1</button>
                 <button onclick="scientificNumber('2')">2</button>
                 <button onclick="scientificNumber('3')">3</button>
-                <button onclick="scientificOperator('-')">−</button>
+
+                <button onclick="scientificOperator('-')">
+                    −
+                </button>
 
                 <button onclick="scientificNumber('0')">0</button>
+
                 <button onclick="scientificDecimal()">.</button>
-                <button onclick="scientificOperator('+')">+</button>
+
+                <button onclick="scientificOperator('+')">
+                    +
+                </button>
+
                 <button class="equals"
-                        onclick="scientificCalculate()">=</button>
+                        onclick="scientificCalculate()">
+                    =
+                </button>
 
             </div>
 
@@ -218,7 +316,7 @@
 
 
     <!-- ========================= -->
-    <!-- حاسبة النسبة -->
+    <!-- حاسبة النسبة المئوية -->
     <!-- ========================= -->
 
     <section id="percentage"
@@ -228,20 +326,24 @@
 
         <div class="form-calculator">
 
-            <label>
-                كم تساوي النسبة من الرقم؟
+            <label for="percentageValue">
+                الرقم
             </label>
 
             <input id="percentageValue"
                    type="number"
-                   placeholder="الرقم">
+                   placeholder="مثال: 200">
+
+            <label for="percentageNumber">
+                النسبة %
+            </label>
 
             <input id="percentageNumber"
                    type="number"
-                   placeholder="النسبة %">
+                   placeholder="مثال: 15">
 
             <button onclick="calculatePercentage()">
-                احسب
+                احسب النسبة
             </button>
 
             <div id="percentageResult"
@@ -264,7 +366,7 @@
 
         <div class="form-calculator">
 
-            <label>
+            <label for="originalPrice">
                 السعر الأصلي
             </label>
 
@@ -272,7 +374,7 @@
                    type="number"
                    placeholder="مثال: 100">
 
-            <label>
+            <label for="discountPercent">
                 نسبة الخصم %
             </label>
 
@@ -304,7 +406,7 @@
 
         <div class="form-calculator">
 
-            <label>
+            <label for="loanAmount">
                 مبلغ القرض
             </label>
 
@@ -312,7 +414,7 @@
                    type="number"
                    placeholder="مثال: 10000">
 
-            <label>
+            <label for="loanInterest">
                 نسبة الفائدة السنوية %
             </label>
 
@@ -320,7 +422,7 @@
                    type="number"
                    placeholder="مثال: 5">
 
-            <label>
+            <label for="loanYears">
                 مدة القرض بالسنوات
             </label>
 
@@ -352,7 +454,9 @@
     </div>
 
 
-    <!-- قسم SEO -->
+    <!-- ========================= -->
+    <!-- محتوى SEO -->
+    <!-- ========================= -->
 
     <section class="seo-content">
 
@@ -360,15 +464,44 @@
 
         <p>
             موقع حاسباتي يوفر مجموعة من الأدوات والحاسبات
-            المجانية التي يمكن استخدامها بسهولة من الهاتف
-            والكمبيوتر دون الحاجة إلى تثبيت برنامج.
+            المجانية التي تساعدك على إجراء العمليات الحسابية
+            بسهولة من الهاتف أو الكمبيوتر دون الحاجة إلى تثبيت
+            برنامج.
         </p>
 
-        <h3>ما هي الحاسبات الموجودة؟</h3>
+        <h3>الحاسبة العادية</h3>
 
         <p>
-            يمكنك استخدام الحاسبة العادية، الحاسبة العلمية،
-            حاسبة النسبة المئوية، حاسبة الخصم وحاسبة القروض.
+            استخدم الحاسبة العادية لإجراء عمليات الجمع والطرح
+            والضرب والقسمة والنسب المئوية بسرعة وسهولة.
+        </p>
+
+        <h3>الحاسبة العلمية</h3>
+
+        <p>
+            حاسبة علمية مجانية لإجراء العمليات الحسابية
+            واستخدام الجذر والتربيع والعمليات الأساسية.
+        </p>
+
+        <h3>حاسبة النسبة المئوية</h3>
+
+        <p>
+            احسب النسبة المئوية من أي رقم بسهولة باستخدام
+            حاسبة النسبة المئوية المجانية.
+        </p>
+
+        <h3>حاسبة الخصم</h3>
+
+        <p>
+            احسب قيمة الخصم والسعر بعد الخصم بسرعة، سواء
+            للمنتجات أو الأسعار المختلفة.
+        </p>
+
+        <h3>حاسبة القروض</h3>
+
+        <p>
+            احسب القسط الشهري التقريبي للقرض اعتمادًا على
+            مبلغ القرض ونسبة الفائدة ومدة السداد.
         </p>
 
     </section>
@@ -385,16 +518,9 @@
 </footer>
 
 
+<!-- JavaScript -->
 <script src="script.js"></script>
 
 </body>
 
 </html>
-
-<div class="ad-container">
-
-    <span>مساحة إعلانية</span>
-
-    <!-- ضع كود Google AdSense هنا -->
-
-</div>
